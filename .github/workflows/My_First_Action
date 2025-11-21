@@ -1,0 +1,10 @@
+name: My First Action
+on: push
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hi
+        run: echo "Привет! Я твой первый пайплайн!"
+      - name: Show System Info
+        run: uname -a
